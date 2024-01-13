@@ -1,0 +1,3 @@
+be mindful of the coding standards and styling guide
+
+"Anytime you use the work of another individual, which includes a classmate, it must be documented in the block of code where it was used.  For example, let's say I am stuck on a programming assignment and I use Google to find a solution.  If I use the code from the solution I found on Google, I must include a link to the source and a description of what I used above the block of code where it is being used.  File header comments, block comments, indention, line spaces, and organization are all gradable items in a submitted programming assignment."

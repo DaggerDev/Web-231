@@ -1,74 +1,93 @@
 <!DOCTYPE html>
 <html>
-<head>
-   <!--
+  <head>
+    <!--
       JavaScript 7th Edition
       Chapter 1
       Hands-on Project 1-2
 
-      Author: 
-      Date:   
+      Author: William Renard
+      Date: 1-13-2024
 
       Filename: project01-02.html
    -->
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-   <title>Hands-on Project 1-2</title>
-   <link rel="stylesheet" href="styles.css" />
-</head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Hands-on Project 1-2</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="project01-02_txt.js"></script>
+  </head>
 
-<body>
-   <header>
-      <h1>
-         Hands-on Project 1-2
-      </h1>
-   </header>
+  <body>
+    <header>
+      <h1>Hands-on Project 1-2</h1>
+    </header>
 
-   <article>
+    <article>
       <h2>High-Speed Internet Plans</h2>
 
       <table>
-         <thead>
-            <tr>
-               <th>Service</th>
-               <th>Download Speed (Mbps)</th>
-            </tr>
-         </thead>
-         <tbody>
-            <tr>
-               <td>
-
-               </td>
-               <td>
-
-               </td>
-            </tr>
-            <tr>
-               <td>
-
-               </td>
-               <td>
-
-               </td>
-            </tr>
-            <tr>
-               <td>
-
-               </td>
-               <td>
-
-               </td>
-            </tr>
-            <tr>
-               <td>
-
-               </td>
-               <td>
-
-               </td>
-            </tr>
-         </tbody>
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Download Speed (Mbps)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <script>
+                /*
+                  Need to create paragraph tags and place the variable from the project01-02.js script inside of them.
+                  Repeat this for each data point.
+                */
+                document.write("<p>" + service1Name + "</p>");
+              </script>
+            </td>
+            <td>
+              <script>
+                document.write("<p>" + service1Speed + "</p>");
+              </script>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <script>
+                document.write("<p>" + service2Name + "</p>");
+              </script>
+            </td>
+            <td>
+              <script>
+                document.write("<p>" + service2Speed + "</p>");
+              </script>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <script>
+                document.write("<p>" + service3Name + "</p>");
+              </script>
+            </td>
+            <td>
+              <script>
+                document.write("<p>" + service3Speed + "</p>");
+              </script>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <script>
+                document.write("<p>" + service4Name + "</p>");
+              </script>
+            </td>
+            <td>
+              <script>
+                document.write("<p>" + service4Speed + "</p>");
+              </script>
+            </td>
+          </tr>
+        </tbody>
       </table>
-   </article>
-</body>
+    </article>
+  </body>
 </html>

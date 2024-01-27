@@ -38,12 +38,15 @@ document.getElementById("burger").addEventListener("click", () => {
 });
 
 function calcTotal() {
-  let cost = 0;
   let buyChicken = document.getElementById("chicken").checked;
   let buyHalibut = document.getElementById("halibut").checked;
   let buyBurger = document.getElementById("burger").checked;
   let buySalmon = document.getElementById("salmon").checked;
   let buySalad = document.getElementById("salad").checked;
+
+  let cost = 0;
+  let tax = cost * sales_tax;
+  let totalCost = cost + tax;
 
   // I was doing if statements but the assignment said to see Figure 2-21 which uses the ? operator.
   cost += buyChicken ? chicken_price : 0;
@@ -52,8 +55,8 @@ function calcTotal() {
   cost += buySalmon ? salmon_price : 0;
   cost += buySalad ? salad_price : 0;
 
-  let tax = cost * sales_tax;
-  let totalCost = cost + tax;
+
+
   document.getElementById("foodTotal").innerHTML = formatCurrency(cost);
   document.getElementById("foodTax").innerHTML = formatCurrency(tax);
   document.getElementById("totalBill").innerHTML = formatCurrency(totalCost);

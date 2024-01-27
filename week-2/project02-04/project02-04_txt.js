@@ -55,8 +55,6 @@ function calcTotal() {
   cost += buySalmon ? salmon_price : 0;
   cost += buySalad ? salad_price : 0;
 
-
-
   document.getElementById("foodTotal").innerHTML = formatCurrency(cost);
   document.getElementById("foodTax").innerHTML = formatCurrency(tax);
   document.getElementById("totalBill").innerHTML = formatCurrency(totalCost);

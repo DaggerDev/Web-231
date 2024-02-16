@@ -41,7 +41,7 @@ function runTheRegister() {
   try {
     let changeValue = cashBox.value - billBox.value;  // calculate the change
     // check if the change value is not greater than or equal to 0.
-    if(!(changeValue >= 0)) {
+    if(!(changeValue >= 0)) { // put the changeValue >= 0 inside another set of parenthesis because without them it will give an error if the changeValue is 0.
       throw "Cash amount doesn't cover the bill.";
     }
 
